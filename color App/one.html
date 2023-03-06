@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>color</title>
+    <style>
+        button{
+            position:absolute;
+            top:60%;
+            left: 50%;
+            background-color: blue;
+            color: white;
+            border: none;
+            margin-top:5%;
+
+        }
+        #box{
+            border: 3px solid red;
+            height: 200px;
+            width: 300px;
+            margin-left:30%;
+            
+
+        }
+    </style>
+    <script>
+        function display(){
+            //formula for default color
+            //8 default no's is for default color
+            //16 means 0-9 no's and A-F alphabets
+            let b="#" +Math.floor(Math.random()*12312312).toString(16)
+            document.getElementById("box").style.backgroundColor=b
+
+        }
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+    <button onclick="display()">click</button>
+</body>
+</html>
